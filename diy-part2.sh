@@ -11,10 +11,10 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.50.252/g' package/base-files/files/bin/config_generate
 
 #添加额外软件包
-git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
+@ git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
 # svn co https://github.com/xiaorouji/openwrt-package/trunk/package/brook package/openwrt-packages/brook
 # svn co https://github.com/xiaorouji/openwrt-package/trunk/package/chinadns-ng package/openwrt-packages/chinadns-ng
 # svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-go package/openwrt-packages/trojan-go
@@ -29,8 +29,8 @@ git clone https://github.com/bin20088/luci-theme-argon-mc.git package/openwrt-pa
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/openwrt-packages/luci-theme-opentomcat
 git clone https://github.com/bin20088/luci-theme-butongwifi.git package/openwrt-packages/luci-theme-butongwifi
 git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/openwrt-packages/luci-theme-atmaterial
-git clone https://github.com/bin20088/luci-app-koolproxyR.git package/openwrt-packages/luci-app-koolproxyR
-git clone https://github.com/bin20088/luci-app-koolddns.git package/openwrt-packages/luci-app-koolddns
+#git clone https://github.com/bin20088/luci-app-koolproxyR.git package/openwrt-packages/luci-app-koolproxyR
+#git clone https://github.com/bin20088/luci-app-koolddns.git package/openwrt-packages/luci-app-koolddns
 # git clone https://github.com/fw876/helloworld.git package/openwrt-packages/helloworld
 git clone https://github.com/tuanqing/install-program package/openwrt-packages/install-program
 svn co https://github.com/0saga0/OpenClash/trunk/luci-app-openclash package/openwrt-packages/luci-app-openclash
